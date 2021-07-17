@@ -17,6 +17,7 @@ class App extends Component{
     cssView: false,
     jsView: false,
   }
+  // The function handling the View of the selected file
   EnableMyView = (type) => {
     if(type === "html"){
       this.setState((prevState)=> ({
@@ -45,23 +46,26 @@ class App extends Component{
     }
 
   }
+  // The function Change in the html content
   ChangeInputHandlerHTML = (value) => {
     this.setState({
       html: value
     });
   }
+  // The function Change in the css content
   ChangeInputHandlerCSS = (value) => {
     this.setState({
       css: value
     });
   }
+  // The function Change in the js content
   ChangeInputHandlerJS = (value) => {
     this.setState({
       js: value
     });
   }
   render(){
-    // Doc to make the file connected
+    // Doc to make the all file linked
     let srcDoc = `
       <html>
         <body>${this.state.html}</body>
@@ -69,6 +73,7 @@ class App extends Component{
         <script>${this.state.js}</script>
       </html>
     `;
+    // Final content to be entacted when share link is clicked
     let content = {
       HTML: this.state.html, 
       CSS: this.state.css, 
