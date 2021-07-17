@@ -1,9 +1,12 @@
-# Getting Started with Create React App
+## About The Project
 
+
+This was Task given by Dyte as a hiring challenge in which we were asked to create an application using react which enbales a dynamic code editor to the user in which you can update your html, css and js and the changes which you are making would be reflected in a live window(hot reloading), apart from it you will also have a share feature using which you can share your code with anybody (achieved using pastebin API).
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
@@ -68,3 +71,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Installation Steps
+
+1. Clone this repo 
+  sh
+   git clone https://github.com/yashkhatriVIT/Dyte_Task_Frontend.git
+   
+2. Install Required dependecies
+   ### `npm install`
+   
+3. Start Script with
+   ### `npm start`
