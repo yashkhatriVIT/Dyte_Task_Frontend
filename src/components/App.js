@@ -1,11 +1,14 @@
 import React, {Fragment, Component} from 'react';
 import './App.css'
+
+// Local imports dfetching the editors
 import HtmlEditor from './Editors/HtmlEditor';
 import CssEditor from './Editors/CssEditor';
 import JsEditor from './Editors/JsEditor';
 import Sidebar from './Sidebar/Sidebar';
 
 class App extends Component{
+  // State maintaing the content in the respective files and their respective views
   state = {
     html: '',
     css: '', 
@@ -58,6 +61,7 @@ class App extends Component{
     });
   }
   render(){
+    // Doc to make the file connected
     let srcDoc = `
       <html>
         <body>${this.state.html}</body>
@@ -74,6 +78,7 @@ class App extends Component{
       <Fragment>
         <Sidebar enableView = {this.EnableMyView} content = {content}/>
       <div className = "pane top-pane">
+        {/* Options satisfying the configuration of the code editor and passing the content handler*/}
         <HtmlEditor 
           language="xml" 
           displayName="index.html"
@@ -94,6 +99,7 @@ class App extends Component{
           view = {this.state.jsView}/>
       </div>
       <div className = "pane">
+        {/* An iframe which showed the rendered web content */}
         <h4>Live Window</h4>
         <iframe 
           srcDoc = {srcDoc}

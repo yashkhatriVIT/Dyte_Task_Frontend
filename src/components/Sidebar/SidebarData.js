@@ -1,7 +1,7 @@
 import React from 'react'
 import * as IoIcons from 'react-icons/io';
 
-
+//  File data whcich is to be shown while displaying the files in the explorer
 const SidebarData = [
     {
         title: 'index.html',

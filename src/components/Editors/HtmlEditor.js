@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
+
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/material.css'
+
+// Code mirror module for html 
 import 'codemirror/mode/xml/xml'
+
 import {Controlled as ControlledEditor} from 'react-codemirror2';
 import classes from './style.module.css';
 class HtmlEditor extends Component{
-    state = {
-        open: true
+     /* 
+        This function will enable and disable the current window and will show the clicked file editor
+        the function in turn will call the onChange function passed in the props 
+        which will allow user to manage the view for the file to be fetched
+    */
+   handleChange = (editor, data, value) => {
+       this.props.onChange(value);
     }
-    handleChange = (editor, data, value) => {
-        this.props.onChange(value);
-    }
-    handleClick = ()=>{
-        this.setState((prevState) => ({
-            open : !prevState.open
-        }));
-    }
+    /* 
+        This is the editor set up which we have to do, so this is HTML editor
+    */
+
     render(){
         return (
             <div className = {`${classes.editor_container} ${this.props.view ? classes.Show : classes.Hide}`}>

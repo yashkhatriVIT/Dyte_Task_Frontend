@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
+
+// Library used
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/material.css'
+// Code mirror for js
 import 'codemirror/mode/javascript/javascript'
-import classes from './style.module.css';
 import {Controlled as ControlledEditor} from 'react-codemirror2';
 
+// Styling 
+import classes from './style.module.css';
+
 class JsEditor extends Component{
-    state = {
-        open: true
-    }
-    handleChange = (editor, data, value) => {
-        this.props.onChange(value);
-    }
-    handleClick = ()=>{
-        this.setState((prevState) => ({
-            open : !prevState.open
-        }));
+    /* 
+        This function will enable and disable the current window and will show the clicked file editor
+        the function in turn will call the onChange function passed in the props 
+        which will allow user to manage the view for the file to be fetched
+    */
+   handleChange = (editor, data, value) => {
+       this.props.onChange(value);
+    /* 
+        This is the editor set up which we have to do, so this is JS editor
+    */
     }
     render(){
         return (
