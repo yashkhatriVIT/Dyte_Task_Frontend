@@ -21,16 +21,18 @@ class Sidebar extends Component {
         }));
     }
     /*
-        creating the link for sharing the file, the file is an object 
+        creating the link for sharing the file, the file is an JSON Paresed String
         containing the data as {HTML: content, CSS: content, JS: content}
         JSON string
     */ 
     createLink = () => {
         let request = new XMLHttpRequest();
+        // Url added to handle cors https://cors-anywhere.herokuapp.com/
         request.open("POST", "https://cors-anywhere.herokuapp.com/https://pastebin.com/api/api_post.php", true);
         request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         request.onreadystatechange = function() {
             if(request.readyState === 4 && request.status === 200) {
+                // The required Link will be shown in the alert box
                 alert(`This is your sharable link ${request.responseText}`);
             }
         }
