@@ -1,7 +1,11 @@
 ## About The Project
 
 
-This was Task given by Dyte as a hiring challenge in which we were asked to create an application using react which enbales a dynamic code editor to the user in which you can update your html, css and js and the changes which you are making would be reflected in a live window(hot reloading), apart from it you will also have a share feature using which you can share your code with anybody (achieved using pastebin API).
+This was task given by Dyte as a hiring challenge in which we were asked to create an application using react which enbales a dynamic code editor to the user in which you can update your html, css and js and the changes which you are making would be reflected in a live window(hot reloading), apart from it you will also have a share feature using which you can share your code with anybody (achieved using pastebin API).
+
+The “live view” section must display the rendered website that was created by the user. When a change is made to any of the index.html, index.css, or index.js files, 
+the “live view” section should hot-reload, and display the new output.
+
 
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -83,3 +87,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
    
 3. Start Script with
    ### `npm start`
+
+4. Demo
+   (https://60f2e9bc4e78aa0007cb73ac--nostalgic-lamarr-7bde79.netlify.app/)
