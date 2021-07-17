@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #060b26;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .menu_bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+  }
+  
+  .nav_menu {
+    background-color: #060b26;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 2s ease-in;
+    
+  }
+  
+  .nav_menu.active {
+    left: 0;
+    transition: all 2s ease-in;
+  }
+  
+  .share:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+  }
