@@ -31,6 +31,6 @@
   }
   
   .share:hover{
-    background-color: greenyellow;
     cursor: pointer;
+    font-size: 34px;
   }
