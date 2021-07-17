@@ -89,4 +89,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
    ### `npm start`
 
 4. Demo
-   (https://60f2e9bc4e78aa0007cb73ac--nostalgic-lamarr-7bde79.netlify.app/)
+   netlify (https://60f2e9bc4e78aa0007cb73ac--nostalgic-lamarr-7bde79.netlify.app/)
+   gh-pages (https://yashkhatrivit.github.io/Dyte_Task_Frontend/)
